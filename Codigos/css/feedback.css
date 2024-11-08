@@ -1,0 +1,163 @@
+@media (min-width: 350px) and (max-width: 1024px){
+
+    body {
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        background-color: #1B632B;
+        width: 100%;
+        display: grid;
+      justify-content: center;
+        
+    }
+    
+    .logo-principal {
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+    
+}
+
+.pontos {
+    width: 85%;
+    height: 65px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    
+}
+
+.pontos h4 {
+    margin: 1px;
+    padding: 3px;
+}
+
+.pontos h5 {
+    margin-left: -83px;
+}
+
+.iconIMG {
+    height: 98%;
+    width: 65px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin: 0.4px;
+    
+}
+
+.IconPontos {
+    width: 50px;
+    margin: 5px;
+    height: 50px;
+}
+
+.barraPontos {
+    border-radius: 5px;
+    background-color: #c0bfbf;
+    border: 0.5px solid black;
+    width: 60%;
+    height: 12px;
+    margin-top: 45px;
+    margin-left: -50px;
+}
+
+.pontosGanhos {
+    width: 60%;
+    background-color: #1B632B;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.imgcarinho {
+    margin: 5px;
+    width: 10%;
+    height: 25%;
+}
+
+hr {
+    margin-top: 25px;
+}
+
+.titulo-brinde {
+    text-align: center;
+    
+}
+.itensBrinde{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.brinde {
+    width: 4rem;
+    width: 8rem;
+    border: solid black 1px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.brinde a {
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+}
+
+.brinde img {
+    margin: auto;
+    width: 100%;
+    height: 63%;
+}
+
+.brinde h5{
+    margin-top: -0.25rem;
+}
+.brinde .moedaPonto {
+    margin-top: -0.5rem ;
+}
+
+.pontosBrinde {
+    width: 50px;
+    display: flex;
+    margin-top: 1.5rem ;
+    margin: auto;
+}
+
+.pontosBrinde img {
+    width: 20px;
+    height: 20px;
+}       
+.spacer{
+    padding-bottom: 75px;
+}
+footer{
+    width: 100%;
+    background-color: #1B632B;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;      
+}
+.rodape{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.rodape img{
+    display: inline-flex;
+    padding: 25px;
+    padding-top: 5px;
+}
+}

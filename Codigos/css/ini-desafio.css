@@ -1,0 +1,81 @@
+@media (min-width: 320px) and (max-width: 1024px){
+    body{
+        margin: 0;
+    }
+    header {
+        background-color: #1B632B;
+        width: 100%;
+        display: grid;
+      justify-content: center;
+        
+    }
+    
+    .logo-principal {
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+    
+}
+.titulo{
+    text-align: center;
+    font-size: 20px
+}
+.subtitulo{
+    text-align: center;
+}
+.img-principal{
+    text-align: center;
+    
+}
+.info{
+    display: flex;
+    margin: 5px;
+    padding: auto;
+    text-align: center;
+}
+.info div{
+    width: 40%;
+    height: 20%;
+    border: 0.1px solid black;
+}
+button{
+    border: 0.1px solid black;
+    width: 40%;
+    height: 30%;
+    background-color: #1B632B;
+    border-radius: 15px;
+}
+.recado{
+    border: 0.1px solid black;
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    text-align: center;
+}
+.ate{
+    color: #2dee57;
+}
+.spacer{
+    padding-bottom: 75px;
+}
+footer{
+    width: 100%;
+    background-color: #1B632B;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.rodape{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.rodape img{
+    display: inline-flex;
+    padding: 25px;
+    padding-top: 5px;
+}
+}

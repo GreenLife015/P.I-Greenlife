@@ -1,0 +1,49 @@
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu-cadastro{
+    text-align: center;
+}
+header {
+    background-color: #1B632B;
+    width: 100%;
+    display: grid;
+  justify-content: center;
+    
+}
+
+.logo-principal {
+margin: 5px;
+padding: 3px;
+text-align: center;
+
+}
+.inpInfos{}
+.spacer{
+    padding-bottom: 75px;
+}
+footer{
+    width: 100%;
+    background-color: #1B632B;
+    height: 50px;
+    position: fixed ;
+    right: 0;
+    bottom: 0;
+}   
+.rodape{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.rodape img{
+    display: inline-flex;
+    padding: 25px;
+    padding-top: 5px;
+}

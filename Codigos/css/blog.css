@@ -1,0 +1,73 @@
+@media (min-width: 320px) and (max-width: 1024px) {
+    body {
+        margin: 0;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #1B632B;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+
+    }
+
+    .logo-principal {
+        margin: 5px;
+        padding: 3px;
+        text-align: center;
+
+    }
+
+    .titulo {
+        text-align: center;
+    }
+
+    .post {
+        width: 70%;
+        height: 40%;
+        border: 0.1px solid black;
+        border-radius: 20px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .info {
+        display: flex;
+    }
+
+    .info img {
+        width: 10%;
+        height: 5%;
+        margin: 5px;
+    }
+    .spacer{
+        padding-bottom: 75px;
+    }
+
+    footer {
+        width: 100%;
+        background-color: #1B632B;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    .rodape {
+        display: flex;
+        align-items: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .rodape img {
+        display: inline-flex;
+        padding: 25px;
+        padding-top: 5px;
+    }
+}

@@ -1,0 +1,177 @@
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #1B632B;
+    width: 100%;
+    display: grid;
+  justify-content: center;
+    
+}
+
+.logo-principal {
+margin: 5px;
+padding: 3px;
+text-align: center;
+
+}
+.pontos {
+    width: 85%;
+    height: 65px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+
+}
+
+.pontos h4 {
+    margin: 1px;
+    padding: 3px;
+}
+
+.pontos h5 {
+    margin-left: -83px;
+}
+
+.iconIMG {
+    height: 98%;
+    width: 65px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin: 0.4px;
+
+}
+
+.IconPontos {
+    width: 50px;
+    margin: 5px;
+    height: 50px;
+}
+
+.barraPontos {
+    border-radius: 5px;
+    background-color: #c0bfbf;
+    border: 0.5px solid black;
+    width: 60%;
+    height: 12px;
+    margin-top: 45px;
+    margin-left: -50px;
+}
+
+.pontosGanhos {
+    width: 60%;
+    background-color: #1B632B;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.carrinhoIcon img {
+    width: 10%;
+    position: absolute;
+    right: 8%;
+}
+.tituloDesafioDia{
+    text-align: center;
+    padding: 15px;
+}
+.desafio{   
+    width: 85%;
+    height: 85px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top:25px;
+    display: flex;
+}
+.desafio h5{
+ margin: 5px;
+}
+.dias{
+    padding-left:88%;
+}
+.desafio p{
+    margin: 5px;
+}
+hr{
+    margin-top: 25px;
+}
+.noticia{
+    text-align: center;
+}
+.quadNoticias{
+    margin: auto;
+    display: grid;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+.quadNoticias div{
+    display: flex;
+    border: 1px black solid;
+    width: 150px;
+    height: 120px;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.quadNoticias img{
+    width: 100%;
+    height: 80%;
+    top: 0px;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.quadNoticias p{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    color: #000;
+    text-align: center;
+
+}
+.quadNoticias img{
+    padding-top: 0px;
+
+}
+.spacer{
+    padding-bottom: 75px;
+}
+footer{
+    width: 100%;
+    background-color: #1B632B;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.rodape{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.rodape img{
+    display: inline-flex;
+    padding: 30px;
+    padding-top: 5px;
+}
+@media(min-width:750px){
+    
+    .iconGF{
+        margin-left: 49%;
+    }
+}

@@ -1,0 +1,96 @@
+@media (min-width: 320px) and (max-width: 1024px){
+    body{
+        margin: 0;
+    }
+    header {
+        background-color: #1B632B;
+        width: 100%;
+        display: grid;
+      justify-content: center;
+        
+    }
+    
+    .logo-principal {
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+    
+}
+.titulo{
+    text-align: center;
+}
+.mapa{
+    text-align: center;
+    padding: 25px;
+}
+.mapa iframe{
+    width: 90%;
+}
+iframe{
+    border: 1px solid black;
+}
+
+.info1{
+    border: solid black 0.1px;
+    width: 85%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: #95E083;
+    text-align: center;
+    margin: auto;
+}
+.info2{
+    border: solid black 0.1px;
+    width: 85%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: #509BE0;
+    text-align: center;
+    margin: auto;
+    
+}
+.info3{
+    border: solid black 0.1px;
+    width: 85%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: #F3E66B;
+    text-align: center;
+    margin: auto;
+}
+.info4{
+    border: solid black 0.1px;
+    width: 85%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: #F58989;
+    text-align: center;
+    margin: auto; 
+}
+.pontos div{
+    margin-top: 15px;
+}
+.spacer{
+    padding-bottom: 75px;
+}
+footer{
+    width: 100%;
+    background-color: #1B632B;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.rodape{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.rodape img{
+    display: inline-flex;
+    padding: 25px;
+    padding-top: 5px;
+}
+}

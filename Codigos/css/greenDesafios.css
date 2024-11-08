@@ -1,0 +1,78 @@
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #1B632B;
+    width: 100%;
+    display: grid;
+  justify-content: center;
+    
+}
+
+.logo-principal {
+margin: 5px;
+padding: 3px;
+text-align: center;
+
+}
+.tituloDesafioDia{
+    text-align: center;
+}
+
+.desafiotit{
+    margin: 0;
+    text-align: center;
+    padding: 25px;
+}
+.desafio2{
+    width:85%;
+    height: 85px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+
+}
+.desafio2 h5{
+    margin: 5px;
+   }
+ .desafio2 p{
+    margin: 5px;
+}
+.desafio2 img{
+    height: 100%;
+    border: 1px solid black;
+    
+}
+footer{
+    width: 100%;
+    background-color: #1B632B;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.rodape{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.rodape img{
+    display: inline-flex;
+    padding: 30px;
+    padding-top: 5px;
+}
+@media(min-width:750px){
+    .imgDesafio{
+        padding-left: 880%;
+    }   
+    .iconGF{
+        margin-left: 49%;
+    }
+}
