@@ -51,7 +51,7 @@
         display: flex;
     }
 
-    .btnEntrar button {
+    .btnEntrar input {
         margin: auto;
         text-align: center;
         width: 80%;

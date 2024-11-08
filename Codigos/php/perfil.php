@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION["USUARIO"])){
+    header("Location: login.html");
+    exit();
+}
+$usuario = $_SESSION['usuario'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +31,11 @@
     <p class="dados-pessoais">Dados Pessoais:</p>
     <p class="cadastro">Cadastrar-se</p>
 </div>
-    <div><img src="imagens/logonome.png" alt="nome"> <p>nomeUsuario</p></div>
-    <div><img src="imagens/logoemail.png" alt="email"><p>emailUsuario</p></div>
-    <div><img src="imagens/logocpf.png" alt="cpf"><p>cpfUsuario</p></div>
-    <div><img src="imagens/logomaps.png" alt="mapa"><p>emailUsuario</p></div>
-    <div><img src="imagens/logotelefone.png" alt="telefone"><p>telefoneUsuario</p></div>
+    <div><img src="imagens/logonome.png" alt="nome"><?php echo htmlspecialchars($usuario['nomeCompleto']);?></div>
+    <div><img src="imagens/logoemail.png" alt="email"><?php echo htmlspecialchars($usuario['emailUsuario']);?></div>
+    <div><img src="imagens/logocpf.png" alt="cpf"><?php echo htmlspecialchars($usuario['cpfUsuario']);?></div>
+    <div><img src="imagens/logotelefone.png" alt="telefone"><?php echo htmlspecialchars($usuario['telefoneUsuario']);?></div>
+    <a href="php/logout.php">Sair</a>
 </div>
 
 <div class="entrar">
