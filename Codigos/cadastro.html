@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,38 +18,72 @@
         <form action="php/cadastro.php" method="post">
 
             <div class="inpInfos">
-                <label for="nomeUsuario">Nome completo:</label><br>
-                <input type="text" name="nomeCompleto" id="nomeCompleto">
+                <div class="lblInfos">
+                    <label for="nomeUsuario"><h4>Nome completo:</h4></label><br>
+                </div>
+                <div class="inpIcon">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="nomeCompleto" id="nomeCompleto">
+                </div>
             </div>
             <br>
             <div class="inpInfos">
-                <label for="emailUsuario">E-mail:</label><br>
-                <input type="email" name="emailUsuario" id="emailUsuario">
+                <div class="lblInfos">
+                    <label for="emailUsuario"><h4>E-mail:</h4></label><br>
+                </div>
+                <div class="inpIcon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="emailUsuario" id="emailUsuario">
+                </div>
             </div>
 <br>
             <div class="inpInfos">
-                <label for="telefoneUsuario">Telefone:</label><br>
-                <input type="number" name="telefoneUsuario" id="telefoneUsuario">
+                <div class="lblInfos">
+                    <label for="telefoneUsuario"><h4>Telefone:</h4></label><br>
+                </div>
+                <div class="inpIcon">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="number" name="telefoneUsuario" id="telefoneUsuario">
+                </div>
             </div>
 <br>
             <div class="inpInfos">
-                <label for="CPF">CPF:</label><br>
-                <input type="number" name="cpfUsuario" id="cpfUsuario">
+                <div class="lblInfos">
+                    <label for="CPF"><h4>CPF:</h4></label><br>
+                </div>
+                <div class="inpIcon">
+                    <i class="fa-solid fa-address-card"></i>
+                    <input type="number" name="cpfUsuario" id="cpfUsuario">
+                </div>
             </div>
 <br>
             <div class="inpInfos">
-                <label for="senhaUsuario">Senha:</label><br>
-                <input type="password" name="senhaUsuario" id="senhaUsuario">
+                <div class="lblInfos">
+                    <label for="senhaUsuario"><h4>Senha:</h4></label><br>
+                </div>
+                <div class="inpIcon">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="senhaUsuario" id="senhaUsuario">
+                </div>
             </div>
 <br>
             <div class="inpInfos">
-                <label for="confSenhaUsuario">Confirme sua senha:</label><br>
-                <input type="password" name="confSenhaUsuario" id="confSenhaUsuario">
+                <div class="lblInfos">
+                    <label for="confSenhaUsuario"><h4>Confirme sua senha:</h4></label><br>
+                </div>
+                <div class="inpIcon">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="confSenhaUsuario" id="confSenhaUsuario">
+                </div>
             </div>
+            <br>
 <br>
-            <input type="submit" value="CADASTRAR-SE">  
+            <input type="submit" value="CADASTRAR-SE" class="btnCadastrar">  
 
         </form>
+        <br>
+        <hr width="60%">
+        <br>
     </div>
     <div class="spacer"></div>
     <footer>
@@ -57,7 +92,7 @@
             <a href="greenDesafios.html"><img src="imagens/logodesafio.png" alt="desafio"> </a>
             <a href="blog.html"><img src="imagens/logoblog.png" alt="blog"></a>
             <a href="mapa.html"><img src="imagens/logomapa.png" alt="mapa"></a>
-            <a href="perfil.html"><img src="imagens/logoperfil.png" alt="pessoal"></a>
+            <a href="perfil.php"><img src="imagens/logoperfil.png" alt="pessoal"></a>
         </div>
     </footer>
 </body>

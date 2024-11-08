@@ -23,7 +23,41 @@ padding: 3px;
 text-align: center;
 
 }
-.inpInfos{}
+.inpInfos{
+    margin: auto;
+    width: 80%;
+}
+.inpInfos input{
+    width: 100%;
+    border-radius: 5px;
+    border: black 0px solid;
+    height: 1.5rem;
+}
+.inpInfos .lblInfos{
+    text-align: left;
+}
+.inpIcon{
+    display: flex;
+    border-radius: 5px;
+    border: 2px gray solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.inpIcon i{
+    border-radius: 5px;
+    width: 2rem;
+    margin: auto;
+
+}
+.btnCadastrar{
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: #1B632B;
+    color: black;
+    height: 2rem;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bold;
+}
 .spacer{
     padding-bottom: 75px;
 }
