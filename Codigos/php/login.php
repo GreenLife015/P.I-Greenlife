@@ -16,10 +16,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Verifica a senha
             $_SESSION['usuario'] = [
                 'id' => $usuario['id'],
-                'nomeCompleto' => $usuario['nomeCompleto'],
-                'emailUsuario' => $usuario['emailUsuario']
+                'nomeCompleto' => $usuario['nome'],
+                'emailUsuario' => $usuario['email'],
+                'cpfUsuario' => $usuario['cpf'],
+                'telefoneUsuario' => $usuario['telefone']
+                
             ];
-            header("Location: perfil.php");
+            header("Location: http://localhost/P.I-Greenlife/codigos/php/perfil.php");
             exit();
         } else {
             echo "Senha incorreta!";

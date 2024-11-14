@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("ssiis", $nome, $email,$telefone,$cpf, $senha);
 
     if ($stmt->execute()) {
-        echo "Cadastro realizado com sucesso! <a href='entrar.html'>Faça login</a>";
+        echo "Cadastro realizado com sucesso! <a href='Codigos/entrar.html'>Faça login</a>";
     }elseif ($conn-> errno === 1062) {
         echo "Erro: este cadastro já existe!";
     } 
