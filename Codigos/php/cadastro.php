@@ -3,21 +3,24 @@ include 'conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nomeCompleto'];
+    $apelido = $_POST['nomeDeUsuario'];
     $email = $_POST['emailUsuario'];
     $telefone = $_POST['telefoneUsuario'];
     $cpf = $_POST['cpfUsuario'];
     $senha = ($_POST['senhaUsuario']); // Hash da senha
 
-    $stmt = $conn->prepare("INSERT INTO cadastro (nome, email, telefone, cpf, senha) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssiis", $nome, $email,$telefone,$cpf, $senha);
+    $stmt = $conn->prepare("INSERT INTO cadastro (nome, apelido, email, telefone, cpf, senha) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssiis", $nome,$apelido, $email,$telefone,$cpf, $senha);
 
     if ($stmt->execute()) {
-        echo "Cadastro realizado com sucesso! <a href='entrar.html'>Faça login</a>";
+       header(header: "location:  http://localhost/P.I-Greenlife/Codigos/entrar.html");     
     }elseif ($conn-> errno === 1062) {
-        echo "Erro: este cadastro já existe!";
+        $cadastroExistente = "Erro: este cadastro já existe!";
+        echo"<script>alert('$cadastroExistente');</script>";
     } 
     else {
-        echo "Erro ao cadastrar: " . $stmt->error;
+        $msgErroCad = "'Erro ao cadastrar: ' . $stmt->error";
+        echo "<script>alert($msgErroCad)</script>";
     }
 }
 ?>

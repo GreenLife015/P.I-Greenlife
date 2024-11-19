@@ -1,87 +1,116 @@
 @media (min-width: 320px) and (max-width: 1024px) {
-    body {
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
+  body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
 
-    header {
-        background-color: #1B632B;
-        width: 100%;
-        display: grid;
-        justify-content: center;
+  header {
+    background-color: #1b632b;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
 
-    }
+  .logo-principal {
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+  }
 
-    .logo-principal {
-        margin: 5px;
-        padding: 3px;
-        text-align: center;
+  .titulo {
+    text-align: center;
+  }
 
-    }
+  .img-desafio {
+    width: 85%;
+    margin: auto;
+  }
 
-    .titulo {
-        text-align: center;
-    }
+  .img-desafio img {
+    width: 100%;
+    height: 50%;
+    border: 0.1px gray solid;
+    border-radius: 15px;
+  }
 
-    .img-desafio {
-        width: 78%;
-        margin: auto;
-        border-radius: 15px;
-    }
+  .infosDesafio {
+    align-items: center;
+    border: 0.1px gray solid;
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+  }
 
-    .img-desafio img {
-        width: 100%;
-        height: 50%;
-    }
+  .infosDesafio .infoPrincipais {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos nas extremidades */
+    align-items: center;
+    margin: auto;
+    position: relative; /* Para permitir a centralização absoluta */
+  }
+  .pontos{
+    display: flex;
+    align-items: center; /* Alinha verticalmente o "10" e a imagem */
+    gap: 5px; /* Espaçamento entre a imagem e o número */
+  }
+  .infoPrincipais h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: normal; /* Opcional, para remover o negrito */
+  }
+  .infoPrincipais img {
+    width: 35px;
+    height: 35px;
+  }
+  .descricaoDesafio {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .btnParticipar {
+    margin: auto;
+    align-items: center;
+    width: 80%;
+  }
+  .btnParticipar input {
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: #1b632b;
+    color: black;
+    height: 2rem;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bold;
+    width: 100%;
+  }
 
-    .infos{
-        margin: auto;
-        display: flex;
-        flex: row;
-    }
+  .spacer {
+    padding-bottom: 75px;
+  }
 
+  footer {
+    width: 100%;
+    background-color: #1b632b;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
 
+  .rodape {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
 
-
-
-    button {
-        background-color: #1B632B;
-        margin: auto;
-        justify-content: center;
-    }
-
-
-
-
-
-
-    .spacer {
-        padding-bottom: 75px;
-    }
-
-    footer {
-        width: 100%;
-        background-color: #1B632B;
-        height: 50px;
-        position: fixed;
-        right: 0;
-        bottom: 0;
-    }
-
-    .rodape {
-        display: flex;
-        align-items: center;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .rodape img {
-        display: inline-flex;
-        padding: 25px;
-        padding-top: 5px;
-    }
+  .rodape img {
+    display: inline-flex;
+    padding: 25px;
+    padding-top: 5px;
+  }
 }

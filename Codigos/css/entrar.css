@@ -1,74 +1,4 @@
 @media (min-width: 320px) and (max-width: 1024px) {
-    body {
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
-
-    header {
-        background-color: #1B632B;
-        width: 100%;
-        display: grid;
-        justify-content: center;
-
-    }
-
-    .logo-principal {
-        margin: 5px;
-        padding: 3px;
-        text-align: center;
-
-    }
-
-    .titulo {
-        text-align: center;
-    }
-
-    .inpInfos {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0px;
-        justify-content: center;
-    }
-
-    .inpInfos h4 {
-        text-align: left;
-        font-size: 20px;
-    }
-
-    .inpInfos input {
-        width: 80%;
-        border: 2px gray solid;
-        border-radius: 5px;
-        height: 2cap;
-
-    }
-
-    .btnEntrar {
-        margin-top: 3cap;
-        display: flex;
-    }
-
-    .btnEntrar input {
-        margin: auto;
-        text-align: center;
-        width: 80%;
-        background-color: #1B632B;
-        border: 2px black solid;
-        border-radius: 5px;
-        height: 3cap;
-        font-size: 18px;
-        transition: background-color 0.5s ease;
-        cursor: pointer;
-
-    }
-
-    .btnEntrar button:active {
-        background-color: #11411c;
-    }
-
     .btnGoogleFacebook {
         display: flex;
 
@@ -117,31 +47,7 @@
         flex-grow: 1;
         text-align: center;
     }
-
-    .spacer {
-        padding-bottom: 75px;
-    }
-
-    footer {
-        width: 100%;
-        background-color: #1B632B;
-        height: 50px;
-        position: fixed;
-        right: 0;
-        bottom: 0;
-    }
-
-    .rodape {
-        display: flex;
-        align-items: center;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .rodape img {
-        display: inline-flex;
-        padding: 25px;
-        padding-top: 5px;
+    .infoCadastro h4{
+        text-align: center;
     }
 }

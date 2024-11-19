@@ -4,6 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/produto.css">
+    <style>
+        body{
+            justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+        }
+        .titulo-camiseta{
+            text-align: center;
+        }
+        .mensagem {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 9999;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+
+.barra {
+    height: 5px;
+    background-color: #1B632B;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    width: 100%;
+    border: 1px solid black;
+    animation: diminuirBarra 3s linear forwards;
+}
+
+@keyframes diminuirBarra {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+    </style>
     <title>GreenLife</title>
 </head>
 <body>
@@ -17,17 +63,23 @@
 </div>
     <div class="imagem-produto">
     <img src="imagens/camisetaecologica.png" alt="camiseta"></div>
+
       <div class="botao-resgate">
-    <button>RESGATAR BRINDE</button>
-      </div>
+        <button onclick="mostrarMensagem()">RESGATAR BRINDE</button>
+        <div id="mensagem" class="mensagem">
+            <div id="barra" class="barra"></div>
+            O produto chegará em 5 dias na sua casa!
+        </div>
+    
+        <script src="../Codigos/js/script.js"></script>
     <div class="descricao">
-    <p> A camiseta ecológica é feita de materiais 100% sustentáveis, como algodão orgânico e fibras recicladas, garantindo conforto e durabilidade. Produzida de forma ética, essa peça alia estilo e respeito ao meio ambiente. Disponível em cores neutras, é perfeita para quem quer se vestir bem e cuidar do planeta ao mesmo tempo.</p>
+        <p> A camiseta ecológica é feita de materiais 100% sustentáveis, como algodão orgânico e fibras recicladas, garantindo conforto e durabilidade. Produzida de forma ética, essa peça alia estilo e respeito ao meio ambiente. Disponível em cores neutras, é perfeita para quem quer se vestir bem e cuidar do planeta ao mesmo tempo.</p>
     </div>
 
     <hr width="80%"> 
-    <div class="descricao-empresa">
+    <div class="descricao">
     <h3>EMPRESA</h3>    
-    <p>motivos da doação do brinde</p>
+    <p>A Eco T-shirts disponibilizou uma camisa feita de maneira sustentável para reduzir seu impacto ambiental, utilizando materiais recicláveis ou orgânicos e processos de produção que consomem menos água e energia. Com isso, a empresa busca atender à demanda por produtos eco-friendly e reforçar seu compromisso com a responsabilidade social e ambiental.</p>
 </div>
 <div class="spacer"></div>
     <footer>
@@ -36,7 +88,7 @@
             <a href="greenDesafios.html"><img src="imagens/logodesafio.png" alt="desafio"> </a>
             <a href="blog.html"><img src="imagens/logoblog.png" alt="blog"></a>
             <a href="mapa.html"><img src="imagens/logomapa.png" alt="mapa"></a>
-            <a href="perfil.html"><img src="imagens/logoperfil.png" alt="pessoal"></a>
+            <a href="php/perfil.php"><img src="imagens/logoperfil.png" alt="pessoal"></a>
         </div>
     </footer>
 </body>

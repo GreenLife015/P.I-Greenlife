@@ -3,26 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="css/entrar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>GreenLife</title>
 </head>
 <body>
     <header>
         <a href="greeninicio.html"><img src="imagens/GreenLife-Sem-Fundo-Sem-Escrita 1.png" alt="Logo do GreenLife" class="logo-principal"><a>
     </header>
-    <h2 class="titulo">ENTRAR</h2>
-    <hr width="80%">
-    <form action="php/login.php" method="post">
-
-        <div class="inpInfos">
-            <h4>Insira seu e-mail:</h4>
-            <input type="text" name="emailUsuario" id="inpEmail">
-            <h4>Insira sua senha:</h4>
-            <input type="password" name="senhaUsuario" id="inpEmail">
-        </div>
-        <div class="btnEntrar">
-            <input type="submit" value="ENTRAR">
-        </div>
+    <div class="menu-cadastro">
+        <h2>ENTRAR</h2>
+<hr width="60%">
+        <form action="php/login.php" method="post">
+            <div class="inpInfos">
+                <div class="lblInfos">
+                    <label for="emailUsuario"><h4>E-mail:</h4></label><br>
+                </div>
+                <div class="inpIcon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="emailUsuario" id="emailUsuario">
+                </div>
+            </div>
+<br>
+            <div class="inpInfos">
+                <div class="lblInfos">
+                    <label for="senhaUsuario"><h4>Senha:</h4></label><br>
+                </div>
+                <div class="inpIcon">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="senhaUsuario" id="senhaUsuario">
+                </div>
+            </div>
+<br>
+<br>
+            <input type="submit" value="ENTRAR" class="btnCadastrar">  
+        </form>
+        <br>
+        <hr width="60%">
+        <br>
+    </div>
         <div class="btnGoogleFacebook">
             <button class="btnFacebook">
                 <?xml version="1.0" encoding="utf-8"?>
@@ -34,18 +54,17 @@
                 <h4>Google</h4>
             </button>
         </div>
-    </form>
         <div class="infoCadastro">
             <h4>Não tem conta ainda? <a href="cadastro.html">Cadastre-se</a></h4>
         </div>
     <div class="spacer"></div>
     <footer>
         <div class="rodape">
-           <a href="greeninicio.html"><img src="imagens/logoinicio.png" alt="home"></a> 
+           <a href="greeninicio.html"><img src="imagens/logoinicio.png" alt="home"></a>
             <a href="greenDesafios.html"><img src="imagens/logodesafio.png" alt="desafio"></a>
             <a href="blog.html"><img src="imagens/logoblog.png" alt="blog"></a>
             <a href="mapa.html"><img src="imagens/logomapa.png" alt="mapa"></a>
-            <a href="perfil.html"><img src="imagens/logoperfil.png" alt="pessoal"></a>
+            <a href="php/perfil.php"><img src="imagens/logoperfil.png" alt="pessoal"></a>
         </div>
     </footer>
 </body>
