@@ -12,10 +12,7 @@ $usuario = $_SESSION['usuario'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-=======
->>>>>>> 0119f3091f0f235b886e569fbbef6c6e86a39038
     <style>
         @media (min-width: 320px) and (max-width: 1024px){
     body{
@@ -73,7 +70,6 @@ $usuario = $_SESSION['usuario'];
     display: flex;
     padding: 10px;
 }
-<<<<<<< HEAD
 .dados i{
     width: 10%;
    margin: 4px;
@@ -105,8 +101,8 @@ $usuario = $_SESSION['usuario'];
 }
 .cadastro{
    margin-left: 10px;
-=======
-.dados img{
+}
+   .dados img{
     width: 10%;
    margin: 4px;
     
@@ -119,16 +115,14 @@ $usuario = $_SESSION['usuario'];
     display: flex;
 }
 .cadastro{
-  
+
    margin: 4px;
->>>>>>> 0119f3091f0f235b886e569fbbef6c6e86a39038
 }
 .dados-pessoais{
     margin: 5px;
 }
 
 .entrar button{
-<<<<<<< HEAD
     border: 1px black solid;
     border-radius: 5px;
     background-color: #1B632B;
@@ -138,7 +132,6 @@ $usuario = $_SESSION['usuario'];
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-weight: bold;
     width: 90%;
-=======
     background-color: #1B632B;
     border: 0.1px solid black;
     border-radius: 5px;
@@ -146,7 +139,6 @@ $usuario = $_SESSION['usuario'];
     height: 60%;
     margin: auto;
     text-align: center;
->>>>>>> 0119f3091f0f235b886e569fbbef6c6e86a39038
 }
 .entrar{
     margin: auto;
@@ -203,14 +195,11 @@ footer{
         </a>
     </header>
     <div class="img-cabecalho">
-<<<<<<< HEAD
         <img src="../imagens/fundo-perfil.png" alt="Fundo do Perfil" class="imgPerfil">
     </div>
     <img src="../imagens/menina-perfil.webp" alt="Menina Perfil" class="imgLogo">
-=======
     <img src="/Codigos/imagens/fundo-perfil.png" alt="" class="imgPerfil"></div>
     <img src="imagens/menina-perfil.webp" alt="" class="imgLogo">
->>>>>>> 0119f3091f0f235b886e569fbbef6c6e86a39038
 
     <div class="nome-usuario">
         <br>
@@ -221,7 +210,6 @@ footer{
     <br>
     <div class="dados">
         <div class="cad">
-<<<<<<< HEAD
             <p class="dados-pessoais">Dados Pessoais:</p>
             <p class="cadastro"><a href="../cadastro.html">Cadastrar-se</a></p>
         </div>
@@ -246,18 +234,6 @@ footer{
         </div>
     </div>
 <br>
-=======
-    <p class="dados-pessoais">Dados Pessoais:</p>
-    <p class="cadastro">Cadastrar-se</p>
-</div>
-    <div><img src="imagens/logonome.png" alt="nome"><?php echo htmlspecialchars($usuario['nomeCompleto']);?></div>
-    <div><img src="imagens/logoemail.png" alt="email"><?php echo htmlspecialchars($usuario['emailUsuario']);?></div>
-    <div><img src="imagens/logocpf.png" alt="cpf"><?php echo $usuario['cpfUsuario'];?></div>
-    <div><img src="imagens/logotelefone.png" alt="telefone"><?php echo $usuario['telefoneUsuario'];?></div>
-    <a href="logout.php">Sair</a>
-</div>
->>>>>>> 0119f3091f0f235b886e569fbbef6c6e86a39038
-
     <div class="entrar">
         <a href="../entrar.html">
             <button>ENTRAR</button>

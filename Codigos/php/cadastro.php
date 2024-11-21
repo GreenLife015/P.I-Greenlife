@@ -13,11 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("sssiis", $nome,$apelido, $email,$telefone,$cpf, $senha);
 
     if ($stmt->execute()) {
-<<<<<<< HEAD
        header(header: "location:  http://localhost/P.I-Greenlife/Codigos/entrar.html");     
-=======
         echo "Cadastro realizado com sucesso! <a href='Codigos/entrar.html'>Faça login</a>";
->>>>>>> 0119f3091f0f235b886e569fbbef6c6e86a39038
     }elseif ($conn-> errno === 1062) {
         $cadastroExistente = "Erro: este cadastro já existe!";
         echo"<script>alert('$cadastroExistente');</script>";
