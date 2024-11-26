@@ -2,7 +2,7 @@
 session_start();
 if (!isset($_SESSION["usuario"])){
     header("Location: perfil.php");
-    header("Locarion: greeninicio.html");
+    header("Location: greeninicio.html");
     exit();
 }
 $usuario = $_SESSION['usuario'];
@@ -228,6 +228,17 @@ footer{
         <div>
         <i class="fa-solid fa-phone"></i>
             <?php echo $usuario['telefoneUsuario']; ?>
+        </div>
+        <div>
+        <i class="fa-solid fa-star"></i>
+        <?php
+        // Exibindo os pontos do usuário no perfil
+        if (isset($_SESSION['usuario']['pontosUsuario'])) {
+            echo $_SESSION['usuario']['pontosUsuario']; // Exibe o número de pontos
+        } else {
+            echo '0'; // Se não houver pontos, exibe 0
+        }
+        ?> Pontos
         </div>
         <div class="sair">
             <a href="logout.php">Sair</a>

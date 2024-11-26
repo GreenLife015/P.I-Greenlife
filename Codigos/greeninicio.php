@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION["usuario"])){
+    header("Location: perfil.php");
+    header("Location: greeninicio.html");
+    exit();
+}
+$usuario = $_SESSION['usuario'];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,15 +17,24 @@
 </head>
 <body>
     <header>
-        <a href="greeninicio.html"><img src="imagens/GreenLife-Sem-Fundo-Sem-Escrita 1.png" alt="Logo do GreenLife" class="logo-principal"><a>
+        <a href="greeninicio.php"><img src="imagens/GreenLife-Sem-Fundo-Sem-Escrita 1.png" alt="Logo do GreenLife" class="logo-principal"><a>
     </header>
     <div class="pontos">
         <div class="iconIMG">
-            <a href="brindes.html"> <img src="imagens/logopontos.png" alt="icon pontos" class="IconPontos"></a>
+            <a href="brindes.php"> <img src="imagens/logopontos.png" alt="icon pontos" class="IconPontos"></a>
         </div>
 
         <h4>Seus pontos</h4>
-        <h5>0 Pontos</h5>
+        <h5 class="pontosUsuario">
+            <?php 
+        if (isset($_SESSION['usuario']['pontosUsuario'])) {
+            echo $_SESSION['usuario']['pontosUsuario']; // Exibe o número de pontos
+        } else {
+            echo '0'; // Se não houver pontos, exibe 0
+        }
+        ?>
+        </h5>
+        
 
         <div class="barraPontos">
             <div class="pontosGanhos"></div>
@@ -43,7 +61,7 @@
     <div class="spacer"></div>
         <footer>
             <div class="rodape">
-               <a href="greeninicio.html"><img src="imagens/logoinicio.png" alt="home"></a> 
+               <a href="greeninicio.php"><img src="imagens/logoinicio.png" alt="home"></a> 
                 <a href="greenDesafios.html"><img src="imagens/logodesafio.png" alt="desafio"> </a>
                 <a href="blog.html"><img src="imagens/logoblog.png" alt="blog"></a>
                 <a href="mapa.html"><img src="imagens/logomapa.png" alt="mapa"></a>
