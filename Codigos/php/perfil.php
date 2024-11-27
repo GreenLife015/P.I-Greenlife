@@ -190,7 +190,7 @@ footer{
 </head>
 <body>
 <header>
-        <a href="../greeninicio.html">
+        <a href="../greeninicio.php">
             <img src="../imagens/GreenLife-Sem-Fundo-Sem-Escrita%201.png" alt="Logo do GreenLife" class="logo-principal">
         </a>
     </header>
@@ -264,7 +264,7 @@ footer{
     <div class="spacer"></div>
     <footer>
         <div class="rodape">
-            <a href="../greeninicio.html"><img src="../imagens/logoinicio.png" alt="Home"></a>
+            <a href="../greeninicio.php"><img src="../imagens/logoinicio.png" alt="Home"></a>
             <a href="../greenDesafios.html"><img src="../imagens/logodesafio.png" alt="Desafios"></a>
             <a href="../blog.html"><img src="../imagens/logoblog.png" alt="Blog"></a>
             <a href="../mapa.html"><img src="../imagens/logomapa.png" alt="Mapa"></a>
